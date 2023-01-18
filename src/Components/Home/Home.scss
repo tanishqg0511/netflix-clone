@@ -1,0 +1,104 @@
+.banner{
+    height:450px;
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    &::after{
+        content:"";
+        width: 100%;
+        height:100%;
+        position: absolute; 
+        opacity: 0.4;
+    }
+    h1{
+        padding-top: 9rem;
+        padding-left: 20px;
+    }
+    h1,p{
+        width:50%;
+        background-color: transparent;
+        font-size:4rem;
+        z-index: 10;
+    }
+    p{
+        font-size:1rem;
+        letter-spacing: 1px;
+        padding-left: 20px;
+        word-spacing: 2px;
+        font-weight: 100;
+    }
+    >div{
+        display: flex;
+        background-color: transparent;
+    }
+    button{
+        text-align: center;
+        background-color: white;
+        width: 130px;
+        height: 3rem;
+        color: black;
+        font-size: 1rem;
+        outline: none;
+        border: none;
+        z-index: 10;
+        border-radius: 7px;
+        justify-content: center;
+        margin: 1rem;
+        transition: all 0.5s;
+        opacity: 0.8;
+        svg{
+            // background-color: transparent;
+            color:black;
+        }
+        &:hover{
+            background-color:rgb(202, 199, 199)
+        }
+    }
+}
+
+.row{
+    background-color: black;
+    >h2{
+        font-size: 22px;
+        font-weight: 200;
+        margin:10px;
+    }
+    >div{
+        display:flex;
+        margin: 5px;
+        // justify-content: space-evenly;
+        overflow-x: auto;
+    }
+}
+.card{
+    background-color: black;
+    width: 150px;
+    cursor: pointer;
+    margin: 4px;
+    transition: transform 0.5s;
+    &:hover{
+        transform: translateY(-10px);
+    }
+}
+
+.genre{
+    overflow-x: auto;
+    display: flex;
+    background-color: black;
+    flex:0%;
+    >a{
+        padding:8px 0;
+        border-radius: 7px;
+        color:black;
+        margin: 4px;
+        background-color: white;
+        text-align: center;
+        transition: all 0.5s ;
+        min-width: 155px;
+        &:hover{
+            background-color: rgb(212, 209, 209)
+        }
+    }
+
+}
